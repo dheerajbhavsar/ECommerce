@@ -25,7 +25,7 @@ public class ServiceFabricProductRepository : IProductRepository
 
     public async Task<IEnumerable<Product>> GetAllProductsAsync()
     {
-        var products = await _stateManager.GetOrAddAsync<IReliableDictionary<Guid, Product>>("product");
+        var products = await _stateManager.GetOrAddAsync<IReliableDictionary<Guid, Product>>("products");
 
         var result = new List<Product>();
 

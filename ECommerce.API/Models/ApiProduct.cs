@@ -17,5 +17,5 @@ public class ApiProduct
     public double Price { get; set; }
 
     [JsonProperty("availability")]
-    public bool Availability { get; set; }
+    public bool IsAvailable { get; set; }
 }
